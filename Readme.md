@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Борис Бахтин](https://up.htmlacademy.ru/htmlcss/29/user/452047).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Гирда](https://htmlacademy.ru/profile/viktorgirda).
 
 ---
 
