@@ -1,0 +1,273 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-light-black: #283136;
+  --basic-gray: #EEEEEE;
+  --basic-gray-hover: #DFDFDF;
+  --basic-gray-active: #D5D5D5;
+  --basic-dark-gray: #4D4D4D;
+  --basic-red: #FB565A;
+  --basic-red-hover: #E74246;
+  --basic-red-active: #D7373B;
+  --basic-green: #00CA74;
+  --basic-green-hover: #00BC6C;
+  --basic-green-active: #00AA62;
+  --basic-yellow: #EFC849;
+  --basic-yellow-hover: #EAB534;
+  --basic-yellow-active: #E5A722;
+  --basic-white: #ffffff;
+} 
+
+/* Global */
+
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-header {
+  margin-bottom: 70px;
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.cart a {
+  color: var(--basic-black);
+}
+.site-navigation a:hover,
+.cart a:hover {
+  color: var(--basic-red);
+}
+.site-navigation a:focus,
+.cart a:focus {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+.site-navigation a:active,
+.cart a:active {
+  color: var(--basic-black);
+}
+
+/* Sliders */
+
+.sliders-list {
+  list-style: none;
+}
+.slider-item p:first-child {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  text-transform: none;
+}
+.slider-item p:nth-child(2) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+/* Main (Index) */
+
+  /* Content */
+
+.content-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+.content-item {
+  width: 400px;
+  text-align: left;
+}
+.content-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.content-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-light-black);
+  width: 260px;
+  text-transform: none;
+}
+
+/* About us */
+
+.about-us h3 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+.about-us p,
+.about-us-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: none;
+}
+.about-us-list {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  list-style: none;
+}
+
+/* Percent */
+
+.percent p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.percent-list {
+  list-style: none;
+}
+.percent-item h3{
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+.percent-item p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: none;
+}
+
+/* Partners */
+
+.partners-list {
+  list-style: none;
+}
+
+/* Buttons */
+
+.button {
+  padding: 16px 40px;
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+}
+.button-red {
+  background-color: var(--basic-red);
+}
+.button-red:hover,
+.button-red:focus {
+  background-color: var(--basic-red-hover);
+}
+.button-red:active {
+  background-color: var(--basic-red-active);
+}
+.button-green {
+  background-color: var(--basic-green);
+}
+.button-green:hover,
+.button-green:focus {
+  background-color: var(--basic-green-hover);
+}
+.button-green:active {
+  background-color: var(--basic-green-active);
+}
+.button-yellow {
+  background-color: var(--basic-yellow);
+}
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: var(--basic-yellow-hover);
+}
+.button-yellow:active {
+  background-color: var(--basic-yellow-active);
+}
+
+/* Footer */
+
+  /* Address */
+
+.address {
+  width: 319px;
+  background-color: var(--basic_white);
+}
+.adress h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.address p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Socials */
+
+.socials-list {
+  list-style: none;
+}
+.social-button {
+  background-color: #E1E1E1;
+}
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-red-hover);
+}
+.social-button:active {
+  background-color: var(--basic-red-active);
+}
+.social-button img:active {
+  opacity: 0.3;
+}
+
+/* Friendly */
+
+.friendly h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: none;
+}
+.friendly p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+  text-transform: none;
+}
