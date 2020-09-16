@@ -17,12 +17,13 @@
   --basic-yellow-hover: #EAB534;
   --basic-yellow-active: #E5A722;
   --basic-white: #ffffff;
+  --basic-footer-white: #E1E1E1;
+  --basic-footer-gray: #444444;
 } 
 
 /* Global */
 
 body {
-  min-width: 1440px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
@@ -45,52 +46,49 @@ img {
 
 /* Main navigation */
 
-.main-header {
-  margin-bottom: 70px;
+.header {
   color: var(--basic-black);
   background-color: var(--basic-gray);
 }
 
-.main-navigation {
+.menu {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
 }
-
-.site-navigation {
+.main-menu {
   list-style: none;
 }
-
-.site-navigation a,
+.main-menu a,
 .cart a {
   color: var(--basic-black);
 }
-.site-navigation a:hover,
+.main-menu a:hover,
 .cart a:hover {
   color: var(--basic-red);
 }
-.site-navigation a:focus,
+.main-menu a:focus,
 .cart a:focus {
   color: var(--basic-black);
   opacity: 0.3;
 }
-.site-navigation a:active,
+.main-menu a:active,
 .cart a:active {
   color: var(--basic-black);
 }
 
 /* Sliders */
 
-.sliders-list {
+.slider-items {
   list-style: none;
 }
-.slider-item p:first-child {
+.slider-item .slider-name {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   text-transform: none;
 }
-.slider-item p:nth-child(2) {
+.slider-item .slider-sub-name {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -99,24 +97,24 @@ img {
 
 /* Main (Index) */
 
-  /* Content */
+  /* Product */
 
-.content-list {
+.product-list {
   list-style: none;
   margin: 0;
   padding: 0;
 
 }
-.content-item {
+.product-item {
   width: 400px;
   text-align: left;
 }
-.content-item h3 {
+.product-item h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
-.content-item p {
+.product-item p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -243,7 +241,7 @@ img {
   list-style: none;
 }
 .social-button {
-  background-color: #E1E1E1;
+  background-color: var(--basic-footer-white);
 }
 .social-button:hover,
 .social-button:focus {
@@ -268,6 +266,6 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #444444;
+  color: var(--basic-footer-gray);
   text-transform: none;
 }
