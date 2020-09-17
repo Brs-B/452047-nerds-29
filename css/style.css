@@ -213,6 +213,45 @@ img {
 .button-yellow:active {
   background-color: var(--basic-yellow-active);
 }
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--basic-gray-hover);
+}
+.filter-button:active {
+  background-color: var(--basic-gray-active);
+}
+
+/* Main (Catalog) */
+
+  /* Sort */
+
+.sort-catalog-list {
+  list-style: none;
+}
+.sort-catalog-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* Pages */
+
+.pagination-list {
+  list-style: none;
+}
+.pagination-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
 
 /* Footer */
 
@@ -220,7 +259,7 @@ img {
 
 .address {
   width: 319px;
-  background-color: var(--basic_white);
+  background-color: var(--basic-white);
 }
 .adress h3 {
   font-size: 18px;

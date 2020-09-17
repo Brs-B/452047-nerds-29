@@ -3,109 +3,114 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
 
-    <header>
-      <a href="index.html">
+    <header class="header">
+      <a class="logo" href="index.html">
         <img src="http://placehold.it/160x65" width="160" height="65" alt="Логотип Нердс">
       </a>
-      <nav>
-        <ul>
+      <nav class="menu">
+        <ul class="main-menu">
           <li><a href="">Студия</a></li>
           <li><a href="">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li class="current-menu"><a href="catalog.html">Магазин</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
       </nav>
-      <a href="">Корзина</a>
-      <h1>Магазин готовых шаблонов</h1>
+      <div class="cart">
+        <a class="cart-link" href="">Корзина</a>
+      </div>
+      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
     </header>
 
-    <main>
+    <main class="container">
 
-      <section>
-        <h2>Сортировка</h2>
-        <div>
-          <span>Сортировать:</span>
-          <ul>
-            <li>
+      <section class="sort">
+        <h2 class="visually-hidden">Сортировка</h2>
+        <div class="sorting">
+          <span class="to-sort">Сортировать:</span>
+          <ul class="sort-catalog-list">
+            <li class="sort-catalog-item">
               <a href="">По цене</a>
             </li>
-            <li>
+            <li class="sort-catalog-item">
               <a href="">По типу</a>
             </li>
-            <li>
+            <li class="sort-catalog-item">
               <a href="">По названию</a>
             </li>
           </ul>
         </div>
-        <div>
-          <ul>
-            <li>Стрелка вниз</li>
-            <li>Стрелка вверх</li>
+        <div class="switching">
+          <ul class="switch-list">
+            <li class="switch-item">Стрелка вниз</li>
+            <li class="switch-item">Стрелка вверх</li>
           </ul>
         </div>
       </section>
 
-      <section>
-        <h2>Стоимость-ползунок</h2>
+      <section class="filters">
+        <h2 class="visually-hidden">Стоимость-ползунок</h2>
 
-        <h2>Фильтр каталога</h2>
+        <h2 class="visually-hidden">Фильтр каталога</h2>
           <ul>Сетка:
           </ul>
         
           <ul>Особенности:
           </ul>
-          <button type="submit">Показать</button>
+          <button class="button filter-button" type="submit">Показать</button>
       </section>
 
-      <section>
-        <h2>Список каталога</h2>
-        <ul>
-          <li>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список каталога</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
             <a href="">
-              <h3>Sedona</h3>
+              <h3 class="visually-hidden">Sedona</h3>
               <div>
                 <img src="http://placehold.it/358x578" width="358" height="578" alt="Sedona">
               </div>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
-              <h3>Pink</h3>
+              <h3 class="visually-hidden">Pink</h3>
               <div>
                 <img src="http://placehold.it/358x578" width="358" height="578" alt="Pink">
               </div>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
-              <h3>Borodinski</h3>
+              <h3 class="visually-hidden">Borodinski</h3>
               <div>
                 <img src="http://placehold.it/358x578" width="358" height="578" alt="Borodinski">
               </div>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
-              <h3>Mishka</h3>
+              <h3 class="visually-hidden">Mishka</h3>
               <div>
                 <img src="http://placehold.it/358x578" width="358" height="578" alt="Mishka">
               </div>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
-              <h3>A+</h3>
+              <h3 class="visually-hidden">A+</h3>
               <div>
                 <img src="http://placehold.it/358x578" width="358" height="578" alt="A+">
               </div>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
-              <h3>Kvast</h3>
+              <h3 class="visually-hidden">Kvast</h3>
               <div>
                 <img src="http://placehold.it/358x578" width="358" height="578" alt="Kvast">
               </div>
@@ -114,65 +119,68 @@
         </ul>
       </section>
 
-      <div>
-        <ul>
-          <li>
+      <div class="pages">
+        <ul class="pagination-list">
+          <li class="pagination-item current-page">
             <a>1</a>
           </li>
-          <li>
+          <li class="pagination-item">
             <a href="#">2</a>
           </li>
-          <li>
+          <li class="pagination-item">
             <a href="#">3</a>
           </li>
-          <li>
+          <li class="pagination-item">
             <a href="#">Следующая</a>
           </li>
         </ul>      
       </div>
     </main>
 
-    <footer>
-      <section>
-        <div> 
-          <h2>Адрес</h2>
-          <h3>Nёrds Design studio</h3>
-          <p>
-            191186, Санкт-Петербург<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <br>
-          <a href="tel:+78122757575">тел. +7(812)275-75-75</a>
-          <button type="button">Напишите нам</button> 
-        </div>
-        <img src="http://placehold.it/1440x416"  width="1440" heigth="416" alt="Карта">
-      </section>
+    <footer class="page-footer main-footer">
+      <div class="container">
+        <section class="footer-contacts">
+          <div class="address"> 
+            <h2 class="visually-hidden">Адрес</h2>
+            <h3>Nёrds Design studio</h3>
+            <p>
+              191186, Санкт-Петербург<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <br>
+            <a class="footer-phone" href="tel:+78122757575">тел. +7(812)275-75-75</a>
+            <button class="button button-red" type="button">Напишите нам</button> 
+          </div>
+          <img src="http://placehold.it/1440x416"  width="1440" heigth="416" alt="Карта">
+        </section>
 
-      <div>
-        <div>
-          <ul>
-            <li>
-              <a href="">
-                <img src="http://placehold.it/26x15"  width="26" heigth="15" alt="ВКонтакте">
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="http://placehold.it/12x22" width="12" heigth="22" alt="Фейсбук">
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="http://placehold.it/21x11" width="21" heigth="11" alt="Инстаграм">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2>Давайте дружить, это выгодно!</h2>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="footer-socials">
+          <div class="socials">
+            <ul class="socials-list">
+              <li>
+                <a class="social-button" href="">
+                  <img src="http://placehold.it/26x15"  width="26" heigth="15" alt="ВКонтакте">
+                </a>
+              </li>
+              <li>
+                <a class="social-button" href="">
+                  <img src="http://placehold.it/12x22" width="12" heigth="22" alt="Фейсбук">
+                </a>
+              </li>
+              <li>
+                <a class="social-button" href="">
+                  <img src="http://placehold.it/21x11" width="21" heigth="11" alt="Инстаграм">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="friendly">
+            <h2>Давайте дружить, это выгодно!</h2>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
         </div>
       </div>
     </footer>
+
   </body>
 </html>
