@@ -171,6 +171,16 @@ img {
 .partners-list {
   list-style: none;
 }
+.partners-item a {
+  opacity: 0.2;
+}
+.partners-item a:hover,
+.partners-item a:focus {
+  opacity: 1;
+}
+.partners-item a:active {
+  opacity: 0.1;
+}
 
 /* Buttons */
 
