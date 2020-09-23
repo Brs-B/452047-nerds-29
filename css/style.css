@@ -44,21 +44,51 @@ img {
   height: auto;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+
 /* Main navigation */
 
 .header {
   color: var(--basic-black);
   background-color: var(--basic-gray);
+
+}
+.nav-wrapper {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
+.logo {
+  width: 160px;
+  height: 65px;
+}
 .menu {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
 }
 .main-menu {
+
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
+
+
 .main-menu a,
 .cart a {
   color: var(--basic-black);
@@ -79,31 +109,64 @@ img {
 
 /* Sliders */
 
+.sliders-wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .slider-items {
   list-style: none;
 }
-.slider-item .slider-name {
+.slider-item {
+
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+
+.slider-name {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   text-transform: none;
+
 }
-.slider-item .slider-sub-name {
+.slider-sub-name {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-transform: none;
-}
 
+}
+.slider-image {
+  width: 760px;
+  height: 431px;
+  left: 397px;
+}
+.slider-description {
+  width: 397px;
+}
 /* Main (Index) */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
   /* Product */
 
+.product {
+  margin-bottom: 121px;
+}
+.product-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .product-list {
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 .product-item {
   width: 400px;
@@ -122,8 +185,16 @@ img {
   width: 260px;
   text-transform: none;
 }
+.product-item p {
+  margin-bottom: 32px;
+}
 
 /* About us */
+
+.about-us-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
 
 .about-us h3 {
   font-weight: 500;
@@ -146,13 +217,24 @@ img {
 
 /* Percent */
 
+.percent-illustration {
+  width: 360px;
+  height: 208px;
+}
 .percent p {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
 }
 .percent-list {
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  align-content: start;
   list-style: none;
+}
+.percent-item {
+  margin: 0 auto;
+
 }
 .percent-item h3{
   font-weight: 700;
@@ -169,6 +251,9 @@ img {
 /* Partners */
 
 .partners-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 120px;
   list-style: none;
 }
 .partners-item a {
@@ -265,6 +350,7 @@ img {
 
 /* Footer */
 
+
   /* Address */
 
 .address {
@@ -286,7 +372,14 @@ img {
 
 /* Socials */
 
+.footer-socials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .socials-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
 }
 .social-button {
