@@ -109,7 +109,7 @@ img {
 
 /* Sliders */
 
-.sliders-wrapper {
+.sliders {
   width: 1000px;
   margin: 0 auto;
   padding: 0;
@@ -117,11 +117,6 @@ img {
 
 .slider-items {
   list-style: none;
-}
-.slider-item {
-
-  display: grid;
-  grid-template-columns: 1fr min-content;
 }
 
 .slider-name {
@@ -141,11 +136,8 @@ img {
 .slider-image {
   width: 760px;
   height: 431px;
-  left: 397px;
 }
-.slider-description {
-  width: 397px;
-}
+
 /* Main (Index) */
 
 .container {
@@ -200,6 +192,8 @@ img {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+  text-transform: none;
+  width: 651px;
 }
 .about-us p,
 .about-us-item {
@@ -228,9 +222,11 @@ img {
 }
 .percent-list {
   display: grid;
-  grid-template-columns: min-content min-content min-content;
+  grid-template-columns: 1fr 1fr 1fr;
   align-content: start;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .percent-item {
   margin: 0 auto;
@@ -253,8 +249,12 @@ img {
 .partners-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 120px;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+.partners-item {
+  margin: 0 auto;
 }
 .partners-item a {
   opacity: 0.2;
