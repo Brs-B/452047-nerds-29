@@ -314,6 +314,9 @@ img {
   line-height: 18px;
   color: var(--basic-black);
   background-color: var(--basic-gray);
+  width: 260px;
+  height: 50px;
+  text-align: center;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -325,9 +328,42 @@ img {
 
 /* Main (Catalog) */
 
-  /* Sort */
+.catalog-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  text-transform: none;
+}
+.catalog-page {
+  display: grid;
+  grid-template-columns: 360px 360px 360px;
+  grid-template-areas:
+  "filters sorting sorting"
+  "filters catalog catalog"
+  "filters pagination pagination";
+  grid-gap: 40px;
+  align-content: start;
+}
+
+/* Sort */
+
+.sort {
+  grid-area: sorting;
+}
+.sorting {
+  display: grid;
+  grid-template-columns: 1fr min-content min-content;
+}
+.to-sort {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
 
 .sort-catalog-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .sort-catalog-item {
@@ -335,10 +371,56 @@ img {
   font-size: 18px;
   line-height: 30px;
 }
+.switch-list {
+  margin: 0;
+  list-style: none;
+}
+
+/* Filters */
+
+.filters {
+  grid-area: filters;
+}
+.filters-radio-and-checkbox {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+.filter-list {
+  list-style: none;
+}
+.filter-option {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: none;
+}
+
+/* Catalog */
+
+.catalog {
+  grid-area: catalog;
+  min-width: 720px;
+}
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 42px;
+  list-style: none;
+}
 
 /* Pages */
 
+.pages {
+  grid-area: pagination;
+}
+
 .pagination-list {
+  display: grid;
+  grid-template-columns: min-content min-content min-content min-content;
+  column-gap: 11px;
   list-style: none;
 }
 .pagination-item {

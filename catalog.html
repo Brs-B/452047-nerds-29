@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
@@ -10,24 +10,26 @@
   <body class="page-body">
 
     <header class="header">
-      <a class="logo" href="index.html">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
-      </a>
-      <nav class="menu">
-        <ul class="main-menu">
-          <li><a href="">Студия</a></li>
-          <li><a href="">Клиенты</a></li>
-          <li class="current-menu"><a href="catalog.html">Магазин</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="cart">
-        <a class="cart-link" href="">Корзина</a>
+      <div class="nav-wrapper">
+        <a class="logo" href="index.html">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
+        </a>
+        <nav class="menu">
+          <ul class="main-menu">
+            <li><a href="">Студия</a></li>
+            <li><a href="">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="cart">
+          <a class="cart-link" href="">Корзина</a>
+        </div>
       </div>
       <h1 class="catalog-title">Магазин готовых шаблонов</h1>
     </header>
 
-    <main class="container">
+    <main class="container catalog-page">
 
       <section class="sort">
         <h2 class="visually-hidden">Сортировка</h2>
@@ -44,25 +46,66 @@
               <a href="">По названию</a>
             </li>
           </ul>
-        </div>
-        <div class="switching">
-          <ul class="switch-list">
-            <li class="switch-item">Стрелка вниз</li>
-            <li class="switch-item">Стрелка вверх</li>
-          </ul>
+          <div class="switching">
+            <ul class="switch-list">
+              <li class="switch-item">Стрелка вниз</li>
+              <li class="switch-item">Стрелка вверх</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="filters">
-        <h2 class="visually-hidden">Стоимость-ползунок</h2>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <h2 class="visually-hidden">Стоимость-ползунок</h2>
+          <h2>Стоимость:</h2>
 
-        <h2 class="visually-hidden">Фильтр каталога</h2>
-          <ul>Сетка:
-          </ul>
-        
-          <ul>Особенности:
-          </ul>
+          <h2 class="visually-hidden">Фильтр каталога</h2>
+          <fieldset class="filters-radio">
+            <legend class="filters-radio-and-checkbox">Сетка:</legend>
+              <ul class="filter-list">
+                <li class="filter-option filter-radio">
+                  <input class="filter-input filter-input-radio" type="radio" name="radio-grid" id="filter-adaptive" value="adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="filter-input filter-input-radio" type="radio" name="radio-grid" id="filter-fixed" value="fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                <input class="filter-input filter-input-radio" type="radio" name="radio-grid" id="filter-rubbery" value="rubbery">
+                <label for="filter-rubbery">Резиновая</label>
+                </li>
+              </ul>
+          </fieldset>
+
+          <fieldset class="filters-checkbox">
+            <legend class="filters-radio-and-checkbox">Особенности:</legend>
+              <ul class="filter-list">
+                <li class="filter-option filter-checkbox">
+                  <input class="filter-input filter-input-cb" type="checkbox" name="slider" id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="filter-input filter-input-cb" type="checkbox" name="block-advantage" id="filter-block-advantage">
+                  <label for="filter-block-advantage">Блок преимуществ</label>
+                </li>
+                <li class="filter-option filter_checkbox">
+                  <input class="filter-input filter-input-cb" type="checkbox" name="news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-option filter_checkbox">
+                  <input class="filter-input filter-input-cb" type="checkbox" name="gallery" id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li class="filter-option filter_checkbox">
+                  <input class="filter-input filter-input-cb" type="checkbox" name="cart" id="filter-cart">
+                  <label for="filter-cart">Корзина</label>
+                </li>
+              </ul>
+          </fieldset>
           <button class="button filter-button" type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="catalog">
