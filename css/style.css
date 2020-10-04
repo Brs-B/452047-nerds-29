@@ -88,9 +88,7 @@ img {
   width: 160px;
   height: 65px;
 }
-.logo:active {
 
-}
 .menu,
 .cart {
   font-size: 16px;
@@ -215,7 +213,7 @@ img {
 }
 .slider-controls {
   position: absolute;
-  left: 536px;
+  right: 536px;
   bottom: 96px;
   display: flex;
   justify-content: space-between;
@@ -549,8 +547,6 @@ img {
   grid-area: sorting;
 }
 .sorting {
-  /*display: grid;
-  grid-template-columns: 1fr min-content min-content;*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
