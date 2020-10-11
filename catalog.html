@@ -120,6 +120,11 @@
               <div class="catalog-image">
                 <img src="img/catalog-sedona.jpg" width="358" height="578" alt="Sedona">
               </div>
+              <div class="catalog-pop-up">
+                <a class="catalog-name" href="">Sedona</a>
+                <p>Информационный сайт<br>для туристов</p>
+                <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
+              </div>
             </a>
           </li>
           <li class="catalog-item">
@@ -127,6 +132,11 @@
               <h3 class="visually-hidden">Pink</h3>
               <div class="catalog-image">
                 <img src="img/catalog-pink.jpg" width="358" height="578" alt="Pink">
+              </div>
+              <div class="catalog-pop-up">
+                <a class="catalog-name" href="">Pink App</a>
+                <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+                <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
               </div>
             </a>
           </li>
@@ -136,6 +146,11 @@
               <div class="catalog-image">
                 <img src="img/catalog-borodinski.jpg" width="358" height="578" alt="Borodinski">
               </div>
+              <div class="catalog-pop-up">
+                <a class="catalog-name" href="">Barbershop</a>
+                <p>Сайт салона красоты.<br>Для мужчин, да.</p>
+                <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
+              </div>
             </a>
           </li>
           <li class="catalog-item">
@@ -143,6 +158,11 @@
               <h3 class="visually-hidden">Mishka</h3>
               <div class="catalog-image">
                 <img src="img/catalog-mishka.jpg" width="358" height="578" alt="Mishka">
+              </div>
+              <div class="catalog-pop-up">
+                <a class="catalog-name" href="">Mishka</a>
+                <p>Интернет-магазин<br>вязаных игрушек</p>
+                <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
               </div>
             </a>
           </li>
@@ -152,6 +172,11 @@
               <div class="catalog-image">
                 <img src="img/catalog-aplus.jpg" width="358" height="578" alt="A+">
               </div>
+              <div class="catalog-pop-up">
+                <a class="catalog-name" href="">A Plus</a>
+                <p>Лендинг курсов повышения<br>квалификации</p>
+                <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
+              </div>
             </a>
           </li>
           <li class="catalog-item">
@@ -159,6 +184,11 @@
               <h3 class="visually-hidden">Kvast</h3>
               <div class="catalog-image">
                 <img src="img/catalog-kvast.jpg" width="358" height="578" alt="Kvast">
+              </div>
+              <div class="catalog-pop-up">
+                <a class="catalog-name" href="">Кваст</a>
+                <p>Промо-сайт производителя<br>крафтового кваса</p>
+                <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
               </div>
             </a>
           </li>
@@ -228,5 +258,29 @@
       </div>
     </footer>
 
+    <section class="modal contact-us">
+      <h2>Напишите нам</h2>
+      <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="contact-us-item">
+          <label for="your-name">Ваше Имя:</label>
+          <input type="text" id="your-name" name="name" placeholder="Имя Фамилия" required>
+        </p>
+        <p class="contact-us-item">
+          <label for="your-email">Ваш email:</label>
+          <input type="text" id="your-email" name="email" placeholder="email@example.com" required>
+        </p>
+        <p class="contact-us-message">
+          <label for="message">Текст письма:</label>
+          <textarea id="message" name="message" rows="5" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="contact-button button-red" type="submit">Отправить</button>
+      </form>
+      <button class="close-cross-button" type="button" aria-label="Закрыть"></button>
+    </section>
+
+    <section class="modal modal-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.64977583528247!2d30.32253612929504!3d59.938794198867264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631fefe102551%3A0x19e070ca4ac35ecd!2sNerds!5e0!3m2!1sru!2sru!4v1602198172870!5m2!1sru!2sru" width="1440" height="416" allowfullscreen="" title="ул. Б. Конюшенная, д. 19/8"></iframe>
+      <button class="close-cross-button map-cross-button" type="button" aria-label="Закрыть"></button>
+    </section>
   </body>
 </html>
