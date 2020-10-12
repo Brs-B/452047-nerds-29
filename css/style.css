@@ -263,16 +263,9 @@ img {
   padding-top: 80px;
   padding-bottom: 121px;
   position: relative;
+  border-bottom: 2px solid var(--basic-gray);
 }
-.product::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -2px;
-  left: 0;
-  height: 2px;
-  background-color: var(--basic-gray);
-}
+
 .product-wrapper {
   display: flex;
   flex-direction: row;
@@ -314,9 +307,9 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 2px;
-  padding-top: 37px;
+  padding-top: 39px;
   padding-bottom: 74px;
+  border-bottom: 2px solid var(--basic-gray);
 }
 .about-us {
   width: 651px;
@@ -431,28 +424,10 @@ img {
   position: relative;
   margin: 0;
   padding-top: 44px;
-  margin-top: 2px;
-  padding-bottom: 44px;
-  margin-bottom: 2px;
+  padding-bottom: 46px;
+  border-bottom: 2px solid var(--basic-gray);
 }
-.partners::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: -2px;
-  left: 0;
-  height: 2px;
-  background-color: var(--basic-gray);
-}
-.partners::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -2px;
-  left: 0;
-  height: 2px;
-  background-color: var(--basic-gray);
-}
+
 .partners-list {
   display: flex;
   flex-direction: row;
