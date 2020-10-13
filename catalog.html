@@ -9,8 +9,8 @@
   </head>
   <body class="page-body">
 
-    <header class="header">
-      <div class="nav-wrapper container">
+    <header class="header big-title-1">
+      <div class="nav-wrapper big-title-2 container">
         <a class="logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
         </a>
@@ -31,7 +31,7 @@
 
     <main class="container catalog-page">
 
-      <section class="sort">
+      <div class="sort">
         <h2 class="visually-hidden">Сортировка</h2>
         <div class="sorting">
           <span class="to-sort">Сортировать:</span>
@@ -57,7 +57,7 @@
             </ul>
           </div>
         </div>
-      </section>
+      </div>
 
       <section class="filters">
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
@@ -87,9 +87,9 @@
           <fieldset class="filters-radio">
             <legend class="filters-radio-and-checkbox">Сетка:</legend>
               <input hidden="true" class="filter-input filter-input-radio" type="radio" name="radio-grid" id="filter-adaptive" value="adaptive" checked>
-              <label class="filter-option" for="filter-adaptive">Адаптивная</label><br>
+              <label class="filter-option" for="filter-adaptive">Адаптивная</label>
               <input hidden="true" class="filter-input filter-input-radio" type="radio" name="radio-grid" id="filter-fixed" value="fixed">
-              <label class="filter-option" for="filter-fixed">Фиксированная</label><br>
+              <label class="filter-option" for="filter-fixed">Фиксированная</label>
               <input hidden="true" class="filter-input filter-input-radio" type="radio" name="radio-grid" id="filter-rubbery" value="rubbery">
               <label class="filter-option" for="filter-rubbery">Резиновая</label>
           </fieldset>
@@ -97,13 +97,13 @@
           <fieldset class="filters-checkbox">
             <legend class="filters-radio-and-checkbox">Особенности:</legend>
               <input hidden="true" class="filter-input filter-input-cb" type="checkbox" name="slider" id="filter-slider" checked>
-              <label class="filter-option" for="filter-slider">Слайдер</label><br>
+              <label class="filter-option" for="filter-slider">Слайдер</label>
               <input hidden="true" class="filter-input filter-input-cb" type="checkbox" name="block-advantage" id="filter-block-advantage">
-              <label class="filter-option" for="filter-block-advantage">Блок преимуществ</label><br>
+              <label class="filter-option" for="filter-block-advantage">Блок преимуществ</label>
               <input hidden="true" class="filter-input filter-input-cb" type="checkbox" name="news" id="filter-news" checked>
-              <label class="filter-option" for="filter-news">Новости</label><br>
+              <label class="filter-option" for="filter-news">Новости</label>
               <input hidden="true" class="filter-input filter-input-cb" type="checkbox" name="gallery" id="filter-gallery">
-              <label class="filter-option" for="filter-gallery">Галерея</label><br>
+              <label class="filter-option" for="filter-gallery">Галерея</label>
               <input hidden="true" class="filter-input filter-input-cb" type="checkbox" name="cart" id="filter-cart">
               <label class="filter-option" for="filter-cart">Корзина</label>
           </fieldset>
@@ -118,12 +118,21 @@
             <a href="">
               <h3 class="visually-hidden">Sedona</h3>
               <div class="catalog-image">
+                <div class="catalog-image-header">
+                  <div class="header-rounds">
+                    <span class="header-round"></span>
+                    <span class="header-round"></span>
+                    <span class="header-round"></span>
+                  </div>
+                </div>
                 <img src="img/catalog-sedona.jpg" width="358" height="578" alt="Sedona">
-              </div>
-              <div class="catalog-pop-up">
-                <a class="catalog-name" href="">Sedona</a>
-                <p>Информационный сайт<br>для туристов</p>
-                <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
+                <div class="catalog-pop-up">
+                  <a class="catalog-name" href="">
+                    <h4>Sedona</h4>
+                  </a>
+                  <p>Информационный сайт<br>для туристов</p>
+                  <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
+                </div>
               </div>
             </a>
           </li>
@@ -131,12 +140,21 @@
             <a href="">
               <h3 class="visually-hidden">Pink</h3>
               <div class="catalog-image">
+                <div class="catalog-image-header">
+                  <div class="header-rounds">
+                    <span class="header-round"></span>
+                    <span class="header-round"></span>
+                    <span class="header-round"></span>
+                  </div>
+                </div>
                 <img src="img/catalog-pink.jpg" width="358" height="578" alt="Pink">
-              </div>
-              <div class="catalog-pop-up">
-                <a class="catalog-name" href="">Pink App</a>
-                <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
-                <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
+                <div class="catalog-pop-up">
+                  <a class="catalog-name" href="">
+                    <h4>Pink App</h4>
+                  </a>
+                  <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+                  <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
+                </div>
               </div>
             </a>
           </li>
@@ -144,12 +162,21 @@
             <a href="">
               <h3 class="visually-hidden">Borodinski</h3>
               <div class="catalog-image">
+                <div class="catalog-image-header">
+                  <div class="header-rounds">
+                    <span class="header-round"></span>
+                    <span class="header-round"></span>
+                    <span class="header-round"></span>
+                  </div>
+                </div>
                 <img src="img/catalog-borodinski.jpg" width="358" height="578" alt="Borodinski">
-              </div>
-              <div class="catalog-pop-up">
-                <a class="catalog-name" href="">Barbershop</a>
-                <p>Сайт салона красоты.<br>Для мужчин, да.</p>
-                <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
+                <div class="catalog-pop-up">
+                  <a class="catalog-name" href="">
+                    <h4>Barbershop</h4>
+                  </a>
+                  <p>Сайт салона красоты.<br>Для мужчин, да.</p>
+                  <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
+                </div>
               </div>
             </a>
           </li>
@@ -157,12 +184,21 @@
             <a href="">
               <h3 class="visually-hidden">Mishka</h3>
               <div class="catalog-image">
+                <div class="catalog-image-header">
+                  <div class="header-rounds">
+                    <span class="header-round"></span>
+                    <span class="header-round"></span>
+                    <span class="header-round"></span>
+                  </div>
+                </div>
                 <img src="img/catalog-mishka.jpg" width="358" height="578" alt="Mishka">
-              </div>
-              <div class="catalog-pop-up">
-                <a class="catalog-name" href="">Mishka</a>
-                <p>Интернет-магазин<br>вязаных игрушек</p>
-                <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
+                <div class="catalog-pop-up">
+                  <a class="catalog-name" href="">
+                    <h4>Mishka</h4>
+                  </a>
+                  <p>Интернет-магазин<br>вязаных игрушек</p>
+                  <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
+                </div>
               </div>
             </a>
           </li>
@@ -170,12 +206,21 @@
             <a href="">
               <h3 class="visually-hidden">A+</h3>
               <div class="catalog-image">
+                <div class="catalog-image-header">
+                  <div class="header-rounds">
+                    <span class="header-round"></span>
+                    <span class="header-round"></span>
+                    <span class="header-round"></span>
+                  </div>
+                </div>
                 <img src="img/catalog-aplus.jpg" width="358" height="578" alt="A+">
-              </div>
-              <div class="catalog-pop-up">
-                <a class="catalog-name" href="">A Plus</a>
-                <p>Лендинг курсов повышения<br>квалификации</p>
-                <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
+                <div class="catalog-pop-up">
+                  <a class="catalog-name" href="">
+                    <h4>A Plus</h4>
+                  </a>
+                  <p>Лендинг курсов повышения<br>квалификации</p>
+                  <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
+                </div>
               </div>
             </a>
           </li>
@@ -183,13 +228,22 @@
             <a href="">
               <h3 class="visually-hidden">Kvast</h3>
               <div class="catalog-image">
+                <div class="catalog-image-header">
+                  <div class="header-rounds">
+                    <span class="header-round"></span>
+                    <span class="header-round"></span>
+                    <span class="header-round"></span>
+                  </div>
+                </div>
                 <img src="img/catalog-kvast.jpg" width="358" height="578" alt="Kvast">
-              </div>
-              <div class="catalog-pop-up">
-                <a class="catalog-name" href="">Кваст</a>
-                <p>Промо-сайт производителя<br>крафтового кваса</p>
-                <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
-              </div>
+                <div class="catalog-pop-up">
+                  <a class="catalog-name" href="">
+                    <h4>Кваст</h4>
+                  </a>
+                  <p>Промо-сайт производителя<br>крафтового кваса</p>
+                  <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
+                </div>
+              </div> 
             </a>
           </li>
         </ul>
