@@ -1077,13 +1077,16 @@ img {
 /* Footer */
 
 .page-footer {
-  padding-top: 132px;
+  padding-top: 78px;
 }
 .footer-contacts {
   width: 1440px;
   margin: 0 auto;
   padding: 0;
   display: flex;
+}
+.catalog-footer {
+  padding-top: 60px;
 }
   /* Address */
 
