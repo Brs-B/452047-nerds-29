@@ -1203,18 +1203,20 @@ img {
 
 /* Modals */
 
-  /* Contacts */
-
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
+  display: none;
   color: var(--basic-black);
   background-color: var(--basic-white);
   background-position: 0 0;
   background-repeat: repeat;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   transform: translate(-50%, -50%);
+}
+.modal-show {
+  display: block;
 }
 .close-cross-button {
   position: absolute;
@@ -1243,13 +1245,15 @@ img {
   transform: rotate(-45deg);
 }
 
-.contact-us {
-  display: none;
+/* Contacts */
+
+.modal-contact-us {
   bottom: auto;
   width: 760px;
   padding: 63px 100px 84px 100px;
+  z-index: 20;
 }
-.contact-us h2 {
+.modal-contact-us h2 {
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
