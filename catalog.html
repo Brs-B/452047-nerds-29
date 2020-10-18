@@ -19,10 +19,10 @@
         </a>
         <nav class="menu">
           <ul class="main-menu">
-            <li><a href="">Студия</a></li>
-            <li><a href="">Клиенты</a></li>
+            <li><a href="blank.html">Студия</a></li>
+            <li><a href="blank.html">Клиенты</a></li>
             <li class="nav-page-current"><a href="catalog.html">Магазин</a></li>
-            <li><a href="">Контакты</a></li>
+            <li><a href="blank.html">Контакты</a></li>
           </ul>
         </nav>
         <div class="cart">
@@ -51,19 +51,19 @@
           </ul>
           <div class="switching">
             <ul class="switch-list">
-              <li class="switch-item current-sort-arrow">
-                <button  type="button" aria-label="по убыванию">
+              <li class="switch-item">
+                <span tabindex="0" class="arrow-trigger current-arrow-active">
                   <svg class="arrow" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 10L0 0H11"/>
                   </svg>
-                </button>
+                </span>
               </li>
               <li class="switch-item">
-                <button type="button" aria-label="по возрастанию">
+                <span tabindex="0" class="arrow-trigger">
                   <svg class="arrow" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 0L0 10H11L5.5 0Z"/>
                   </svg>
-                </button>
+                </span>
               </li>
             </ul>
           </div>
@@ -71,7 +71,7 @@
       </div>
 
       <section class="filters">
-        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get" target="_blank">
           <h2 class="visually-hidden">Стоимость-ползунок</h2>
           <fieldset class="filter-item">
             <legend class="filter-toggle">Стоимость:</legend>
@@ -98,25 +98,25 @@
           <fieldset class="filters-radio">
             <legend class="filters-radio-and-checkbox">Сетка:</legend>
               <input hidden="true" class="filter-input filter-input-radio" type="radio" name="radio-grid" id="filter-adaptive" value="adaptive" checked>
-              <label class="filter-option" for="filter-adaptive">Адаптивная</label>
+              <label tabindex="0" class="filter-option" for="filter-adaptive">Адаптивная</label>
               <input hidden="true" class="filter-input filter-input-radio" type="radio" name="radio-grid" id="filter-fixed" value="fixed">
-              <label class="filter-option" for="filter-fixed">Фиксированная</label>
+              <label tabindex="0" class="filter-option" for="filter-fixed">Фиксированная</label>
               <input hidden="true" class="filter-input filter-input-radio" type="radio" name="radio-grid" id="filter-rubbery" value="rubbery">
-              <label class="filter-option" for="filter-rubbery">Резиновая</label>
+              <label tabindex="0" class="filter-option" for="filter-rubbery">Резиновая</label>
           </fieldset>
 
           <fieldset class="filters-checkbox">
             <legend class="filters-radio-and-checkbox">Особенности:</legend>
               <input hidden="true" class="filter-input filter-input-cb" type="checkbox" name="slider" id="filter-slider" checked>
-              <label class="filter-option" for="filter-slider">Слайдер</label>
+              <label tabindex="0" class="filter-option" for="filter-slider">Слайдер</label>
               <input hidden="true" class="filter-input filter-input-cb" type="checkbox" name="block-advantage" id="filter-block-advantage">
-              <label class="filter-option" for="filter-block-advantage">Блок преимуществ</label>
+              <label tabindex="0" class="filter-option" for="filter-block-advantage">Блок преимуществ</label>
               <input hidden="true" class="filter-input filter-input-cb" type="checkbox" name="news" id="filter-news" checked>
-              <label class="filter-option" for="filter-news">Новости</label>
+              <label tabindex="0" class="filter-option" for="filter-news">Новости</label>
               <input hidden="true" class="filter-input filter-input-cb" type="checkbox" name="gallery" id="filter-gallery">
-              <label class="filter-option" for="filter-gallery">Галерея</label>
+              <label tabindex="0" class="filter-option" for="filter-gallery">Галерея</label>
               <input hidden="true" class="filter-input filter-input-cb" type="checkbox" name="cart" id="filter-cart">
-              <label class="filter-option" for="filter-cart">Корзина</label>
+              <label tabindex="0" class="filter-option" for="filter-cart">Корзина</label>
           </fieldset>
           <button class="button filter-button" type="submit">Показать</button>
         </form>
@@ -125,9 +125,8 @@
       <section class="catalog">
         <h2 class="visually-hidden">Список каталога</h2>
         <ul class="catalog-list">
-          <li class="catalog-item">
-            <a href="">
-              <h3 class="visually-hidden">Sedona</h3>
+          <li tabindex="0" class="catalog-item">
+            <h3 class="visually-hidden">Sedona</h3>
               <div class="catalog-image">
                 <div class="catalog-image-header">
                   <div class="header-rounds">
@@ -145,10 +144,8 @@
                   <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
                 </div>
               </div>
-            </a>
           </li>
-          <li class="catalog-item">
-            <a href="">
+          <li tabindex="0" class="catalog-item">
               <h3 class="visually-hidden">Pink</h3>
               <div class="catalog-image">
                 <div class="catalog-image-header">
@@ -167,10 +164,8 @@
                   <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
                 </div>
               </div>
-            </a>
           </li>
-          <li class="catalog-item">
-            <a href="">
+          <li tabindex="0" class="catalog-item">
               <h3 class="visually-hidden">Borodinski</h3>
               <div class="catalog-image">
                 <div class="catalog-image-header">
@@ -189,10 +184,8 @@
                   <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
                 </div>
               </div>
-            </a>
           </li>
-          <li class="catalog-item">
-            <a href="">
+          <li tabindex="0" class="catalog-item">
               <h3 class="visually-hidden">Mishka</h3>
               <div class="catalog-image">
                 <div class="catalog-image-header">
@@ -211,10 +204,8 @@
                   <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
                 </div>
               </div>
-            </a>
           </li>
-          <li class="catalog-item">
-            <a href="">
+          <li tabindex="0" class="catalog-item">
               <h3 class="visually-hidden">A+</h3>
               <div class="catalog-image">
                 <div class="catalog-image-header">
@@ -233,10 +224,8 @@
                   <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
                 </div>
               </div>
-            </a>
           </li>
-          <li class="catalog-item">
-            <a href="">
+          <li tabindex="0" class="catalog-item">
               <h3 class="visually-hidden">Kvast</h3>
               <div class="catalog-image">
                 <div class="catalog-image-header">
@@ -255,7 +244,6 @@
                   <button class="catalog-button button-red" type="button">9&nbsp;900 &#8381;</button>
                 </div>
               </div> 
-            </a>
           </li>
         </ul>
       </section>
