@@ -26,7 +26,13 @@
           </ul>
         </nav>
         <div class="cart">
-          <a class="cart-link" href="">Корзина</a>
+          <a class="cart-link" href="">
+            <svg class="cart-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="#A6A6A6"/>
+              <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="#A6A6A6"/>
+              <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="#A6A6A6"/>
+            </svg>Корзина
+          </a>
         </div>
       </div>  
       <div class="sliders container slider-wrapper-1">
@@ -70,7 +76,7 @@
       </div>
     </header>
 
-    <main class="container">
+    <main class="container main-index">
       <h1 class="visually-hidden">HTML Academy Нердс</h1>
 
       <section class="product">
@@ -168,12 +174,9 @@
         <div class="address"> 
           <h2 class="visually-hidden">Адрес</h2>
           <h3>Nёrds Design studio</h3>
-          <p>
-            191186, Санкт-Петербург<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
+          <p>191186, Санкт-Петербург<br>ул. Б. Конюшенная, д. 19/8</p>
           <a class="footer-phone" href="tel:+78122757575">тел. +7(812)275-75-75</a>
-          <button class="text-us-button button button-red" type="button"><span class="button-name">Напишите нам</span></button> 
+          <button class="button text-us-button button-red" type="button"><span class="button-name">Напишите&nbsp;нам</span></button> 
         </div>
       </section>
 
@@ -213,16 +216,16 @@
       <h2>Напишите нам</h2>
       <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="contact-us-item">
-          <label for="your-name">Ваше Имя:</label>
-          <input type="text" id="your-name" name="name" placeholder="Имя Фамилия" required>
+          <label for="your-name">Ваше имя:</label>
+          <input class="contact-name" type="text" id="your-name" name="name" placeholder="Имя Фамилия" required>
         </p>
         <p class="contact-us-item">
           <label for="your-email">Ваш email:</label>
-          <input type="text" id="your-email" name="email" placeholder="email@example.com" required>
+          <input class="contact-email" type="text" id="your-email" name="email" placeholder="email@example.com" required>
         </p>
         <p class="contact-us-message">
           <label for="message">Текст письма:</label>
-          <textarea id="message" name="message" rows="5" placeholder="В свободной форме"></textarea>
+          <textarea class="contact-msg" id="message" name="message" rows="5" placeholder="В свободной форме"></textarea>
         </p>
         <button class="contact-button button-red" type="submit">Отправить</button>
       </form>

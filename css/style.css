@@ -125,9 +125,9 @@ img {
 .nav-page-current::after {
   content: "";
   position: absolute;
-  right: 20px;
+  right: 24px;
   bottom: -13px;
-  left: 20px;
+  left: 24px;
   height: 2px;
   background-color: var(--basic-red);
 }
@@ -139,19 +139,11 @@ img {
   padding-left: 40px;
   position: relative;
 }
-.cart-link::before {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: -18px;
-  width: 15px;
-  height: 15px;
-  background-image: url("../img/cart-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-.cart {
-  padding-left: 38px;
+
+.cart-icon {
+  position: relative;
+  top: 2px;
+  margin-right: 25px;
 }
 .main-menu a,
 .cart a {
@@ -209,14 +201,15 @@ img {
   text-transform: none;
   padding: 0;
   padding-bottom: 80px;
+  padding-top: 78px;
 }
 .slider-name {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   margin: 0;
-  padding-top: 78px;
-  padding-bottom: 25px;
+  padding: 0;
+  margin-bottom: 25px;
 }
 
 .slider-sub-name {
@@ -226,7 +219,7 @@ img {
   text-transform: none;
   padding: 0;
   margin: 0;
-  padding-bottom: 38px;
+  margin-bottom: 38px;
 }
 .slider-image {
   width: 760px;
@@ -275,7 +268,9 @@ img {
   padding: 0 10px;
 
 }
-
+.main-index {
+  padding-bottom: 78px;
+}
   /* Product */
 
 .product {
@@ -580,9 +575,7 @@ img {
   border-radius: 3px;
 }
 .text-us-button {
-  width: 219px;
-  margin-top: 37px;
-  margin-bottom: 47px;
+  padding: 16px 44px;
 }
 
 .contact-button {
@@ -622,6 +615,7 @@ img {
   grid-gap: 40px;
   align-content: start;
   padding-top: 55px;
+  padding-bottom: 60px;
 }
 
 /* Sort */
@@ -725,10 +719,10 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  margin-bottom: 49px;
 }
 .range-filter {
   width: 260px;
-  margin-top: 49px;
   margin-bottom: 54px;
 }
 .filter-item legend {
@@ -1084,9 +1078,6 @@ img {
 
 /* Footer */
 
-.page-footer {
-  padding-top: 78px;
-}
 .footer-contacts {
   width: 1440px;
   margin: 0 auto;
@@ -1094,32 +1085,34 @@ img {
   display: flex;
 }
 .catalog-footer {
-  padding-top: 60px;
+  padding-top: 0;
 }
+
   /* Address */
 
 .address {
-  height: 308px;
+  width: 219px;
+  height: 212px;
   position: relative;
   top: 54px;
   left: -1300px;
-  padding: 0;
-  padding-left: 50px;
-  padding-right: 50px;
-  width: 219px;
+  padding: 49px 50px 47px;
   background-color: var(--basic-white);
-  z-index: 20;
+  z-index: 10;
+  
 }
 .address h3 {
   margin: 0;
-  padding-top: 49px;
   margin-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  letter-spacing: -0.5px;
+  width: 219px;
 }
 .address p,
 .footer-phone {
+  width: 219px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1128,16 +1121,22 @@ img {
   color: #666666;
 }
 .address p {
-  padding-top: 23;
   margin-bottom: 16px;
+}
+.text-us-button {
+  margin-top: 37px;
 }
 .nerds-map {
   margin: 0;
   padding: 0;
   z-index: 1;
 }
+
 /* Socials */
 
+.socials {
+  margin-right: 140px;
+}
 .footer-socials {
   padding-top: 68px;
   padding-bottom: 68px;
@@ -1178,10 +1177,6 @@ img {
 
 /* Friendly */
 
-.friendly {
-  padding-left: 140px;
-}
-
 .friendly h2 {
   padding-top: 7px;
   margin: 0;
@@ -1217,6 +1212,10 @@ img {
 }
 .modal-show {
   display: block;
+  animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
 }
 .close-cross-button {
   position: absolute;
@@ -1227,6 +1226,7 @@ img {
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  opacity: 0.3;
 }
 .close-cross-button::before,
 .close-cross-button::after {
@@ -1244,6 +1244,13 @@ img {
 .close-cross-button::after {
   transform: rotate(-45deg);
 }
+.close-cross-button:hover,
+.close-cross-button:focus {
+  opacity: 1;
+}
+.close-cross-button:active {
+  opacity: 0.1;
+}
 
 /* Contacts */
 
@@ -1257,6 +1264,7 @@ img {
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
+  text-transform: none;
   margin: 0;
 
 }
@@ -1336,4 +1344,46 @@ img {
 .map-cross-button {
   top: 0;
   right: -40px;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
