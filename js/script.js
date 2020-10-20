@@ -1,12 +1,12 @@
-const contactButton = document.querySelector(".text-us-button");
-const contactUsPopup = document.querySelector(".modal-contact-us");
-const PopUpClose = contactUsPopup.querySelector(".close-cross-button");
-const contactForm = contactUsPopup.querySelector(".contact-us-form");
-const contactName = contactUsPopup.querySelector(".contact-name");
-const contactEmail = contactUsPopup.querySelector(".contact-email");
+let contactButton = document.querySelector('.text-us-button');
+let contactPopup = document.querySelector('.modal-contact-us');
+let popupClose = contactPopup.querySelector('.close-cross-button');
+let contactForm = contactPopup.querySelector('.contact-us-form');
+let contactName = contactPopup.querySelector('.contact-name');
+let contactEmail = contactPopup.querySelector('.contact-email');
 
-const isStorageSupport = true;
-const storage = "";
+let isStorageSupport = true;
+let storage = "";
 
 try {
   storage = localStorage.getItem("name");
@@ -16,7 +16,7 @@ try {
 
 contactButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  contactUsPopup.classList.add("modal-show");
+  contactPopup.classList.add("modal-show");
 
   if (storage) {
     contactName.value = storage;
@@ -28,17 +28,17 @@ contactButton.addEventListener("click", function (evt) {
   contactName.focus();
 });
 
-PopUpClose.addEventListener("click", function (evt) {
+popupClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  contactUsPopup.classList.remove("modal-show");
-  contactUsPopup.classList.remove("modal-error");
+  contactPopup.classList.remove("modal-show");
+  contactPopup.classList.remove("modal-error");
 });
 contactForm.addEventListener("submit", function (evt) {
   if (!contactName.value || !contactEmail.value) {
     evt.preventDefault();
-    contactUsPopup.classList.remove("modal-error");
-    contactUsPopup.offsetWidth = contactUsPopup.offsetWidth;
-    contactUsPopup.classList.add("modal-error");
+    contactPopup.classList.remove("modal-error");
+    contactPopup.offsetWidth = contactPopup.offsetWidth;
+    contactPopup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
     localStorage.setItem("name", contactName.value);
@@ -48,10 +48,33 @@ contactForm.addEventListener("submit", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (contactUsPopup.classList.contains("modal-show")) {
+    if (contactPopup.classList.contains("modal-show")) {
       evt.preventDefault();
-      contactUsPopup.classList.remove("modal-show");
-      contactUsPopup.classList.remove("modal-error");
+      contactPopup.classList.remove("modal-show");
+      contactPopup.classList.remove("modal-error");
+    }
+  }
+});
+
+let mapLink = document.querySelector('.nerds-map');
+let mapPopup = document.querySelector('.modal-map');
+let mapClose = mapPopup.querySelector('.map-cross-button');
+
+mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("modal-show-1");
+});
+
+mapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-show-1");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (mapPopup.classList.contains("modal-show-1")) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show-1");
     }
   }
 });

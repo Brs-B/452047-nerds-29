@@ -495,9 +495,9 @@ img {
   border: none;
   border-radius: 3px;
 }
-.button:active .button-name,
-.slider-button:active .button-name {
-  opacity: 0.3;
+.button:active,
+.slider-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 .button-red {
   background-color: var(--basic-red);
@@ -1099,7 +1099,6 @@ img {
   padding: 49px 50px 47px;
   background-color: var(--basic-white);
   z-index: 10;
-  
 }
 .address h3 {
   margin: 0;
@@ -1123,13 +1122,15 @@ img {
 .address p {
   margin-bottom: 16px;
 }
-.text-us-button {
-  margin-top: 37px;
+.address .footer-phone {
+  display: inline-block;
+  margin-bottom: 37px;
 }
 .nerds-map {
+  display: block;
+  cursor: pointer;
   margin: 0;
   padding: 0;
-  z-index: 1;
 }
 
 /* Socials */
@@ -1213,6 +1214,10 @@ img {
 .modal-show {
   display: block;
   animation: bounce 0.6s;
+}
+.modal-show-1 {
+  display: block;
+  z-index: 30;
 }
 .modal-error {
   animation: shake 0.6s;
@@ -1335,9 +1340,6 @@ img {
 
   /* Map */
 
-.modal-map {
-  display: none;
-}
 .modal-map iframe {
   border: none;
 }
