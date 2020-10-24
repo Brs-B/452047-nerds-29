@@ -5,8 +5,12 @@
   font-style: normal;
   font-weight: 400;
   src: local("Roboto"),
-       url("/fonts/roboto.woff2") format("woff2"),
-       url("/fonts/roboto.woff") format("woff");
+       url("../fonts/roboto.woff2") format("woff2"),
+       url("../fonts/roboto.woff") format("woff"),
+       url("../fonts/robotobold.woff2") format("woff2"),
+       url("../fonts/robotobold.woff") format("woff"),
+       url("../fonts/robotomedium.woff2") format("woff2"),
+       url("../fonts/robotomedium.woff") format("woff");
 }
 
 :root {
@@ -83,7 +87,7 @@ img {
 .header {
   color: var(--basic-black);
   background-color: var(--basic-gray);
-  padding-top: 49px;
+  padding-top: 48px;
 }
 .nav-wrapper {
   display: flex;
@@ -104,10 +108,13 @@ img {
   fill: #A6A6A6;
 }
 .menu,
-.cart {
+.cart-link {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
+}
+.menu {
+  padding-right: 43px;
 }
 .main-menu {
   display: flex;
@@ -115,7 +122,7 @@ img {
   flex-grow: 1;
   margin: 0;
   padding: 0;
-  padding-top: 16px;
+  padding-top: 18px;
   list-style: none;
 }
 
@@ -133,10 +140,11 @@ img {
 }
 
 .cart-link {
+  color: var(--basic-black);
+  display: block;
   margin: 0;
   padding: 0;
-  margin-top: 16px;
-  padding-left: 40px;
+  margin-top: 18px;
   position: relative;
 }
 
@@ -145,22 +153,21 @@ img {
   top: 2px;
   margin-right: 25px;
 }
-.main-menu a,
-.cart a {
+.main-menu a {
   color: var(--basic-black);
   display: block;
-  padding: 0 22px;
+  padding: 0 22.5px;
 }
 .main-menu a:hover,
-.cart a:hover {
+.cart-link:hover {
   color: var(--basic-red);
 }
 .main-menu a:focus,
-.cart a:focus {
+.cart-link:focus {
   color: var(--basic-red);
 }
 .main-menu a:active,
-.cart a:active {
+.cart-link:active {
   color: var(--basic-black);
   opacity: 0.3;
 }
@@ -173,16 +180,19 @@ img {
 .slider-wrapper-1 {
   background-image: url("../img/nerds-index-slide1.png");
   background-position: right 13px center;
+  background-color: var(--basic-gray);
   background-repeat: no-repeat;
 }
 .slider-wrapper-2 {
   background-image: url("../img/nerds-index-slide2.png");
   background-position: right 13px center;
+  background-color: var(--basic-gray);
   background-repeat: no-repeat;
 }
 .slider-wrapper-3 {
   background-image: url("../img/nerds-index-slide3.png");
   background-position: right 13px center;
+  background-color: var(--basic-gray);
   background-repeat: no-repeat;
 }
 .slider {
@@ -201,7 +211,8 @@ img {
   text-transform: none;
   padding: 0;
   padding-bottom: 80px;
-  padding-top: 78px;
+  padding-top: 79px;
+  max-width: 400px;
 }
 .slider-name {
   font-weight: 500;
@@ -209,7 +220,7 @@ img {
   line-height: 55px;
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .slider-sub-name {
@@ -219,7 +230,7 @@ img {
   text-transform: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 .slider-image {
   width: 760px;
@@ -295,7 +306,7 @@ img {
   text-align: left;
 }
 .product-item img {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .product-item h3 {
   font-weight: 700;
@@ -322,7 +333,7 @@ img {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 39px;
-  padding-bottom: 74px;
+  padding-bottom: 72px;
   border-bottom: 2px solid var(--basic-gray);
 }
 .about-us {
@@ -336,23 +347,27 @@ img {
   line-height: 45px;
   text-transform: none;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 }
-.about-us p,
+.about-us-text-1,
 .about-us-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-transform: none;
 }
-.about-us p {
+.about-us-text-1 {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
-.about-us-list {
+.about-us-text-2 {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.about-us-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -363,7 +378,7 @@ img {
   position: relative;
 }
 .about-us-item:first-child {
-  margin-top: 24px;
+  margin-top: 0;
 }
 .about-us-item:last-child {
   margin-bottom: 0;
@@ -371,7 +386,7 @@ img {
 .about-us-item::before {
   content: "";
   position: absolute;
-  top: 11px;
+  top: 10px;
   left: -35px;
   width: 25px;
   height: 2px;
@@ -394,7 +409,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 .percent-list {
   display: flex;
@@ -417,12 +432,16 @@ img {
   margin: 0;
   margin-bottom: 10px;
 }
+.percent-item .margins11 {
+  margin-bottom: 11px;
+}
 .percent-item .percent-sign {
   font-weight: 700;
   font-size: 26px;
   line-height: 40px;
   position: relative;
-  top: -15px;
+  top: -16px;
+  left: 2px;
 }
 .percent-item p{
   font-weight: 400;
@@ -439,7 +458,7 @@ img {
   position: relative;
   margin: 0;
   padding-top: 44px;
-  padding-bottom: 44px;
+  padding-bottom: 39px;
   border-bottom: 2px solid var(--basic-gray);
 }
 
@@ -486,7 +505,8 @@ img {
 
 .button {
   display: inline-block;
-  padding: 16px 40px;
+  vertical-align: baseline;
+  padding: 17px 40px 15px 39px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -535,7 +555,8 @@ img {
 }
 .slider-button {
   display: inline-block;
-  padding: 16px 54px;
+  vertical-align: baseline;
+  padding: 17px 54px 15px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -576,7 +597,7 @@ img {
   border-radius: 3px;
 }
 .text-us-button {
-  padding: 16px 44px;
+  padding: 17px 44px 15px;
 }
 
 .contact-button {
@@ -1118,7 +1139,6 @@ img {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  letter-spacing: -1px;
   width: 219px;
 }
 .address p,
@@ -1132,11 +1152,12 @@ img {
   color: #666666;
 }
 .address p {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 .address .footer-phone {
   display: inline-block;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
+  vertical-align: baseline;
 }
 .nerds-map {
   display: block;
