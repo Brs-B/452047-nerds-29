@@ -475,7 +475,7 @@ img {
 .partners-list {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -484,6 +484,27 @@ img {
 .partners-item {
   position: relative;
   margin: 0 auto;
+}
+.partners-html-academy {
+  /*margin-right: 48px;
+  margin-left: 32px;
+  margin-top: 15px;*/
+  top: 8px;
+  left: -17px;
+}
+.partners-borodinski {
+  /*margin-left: 45px;
+  margin-right: 44px;*/
+  top: 2px;
+  left: -20px;
+}
+.partners-pink {
+  top: 2px;
+  left: -15px;
+}
+.partners-mishka {
+  top: 5px;
+  left: 7px;
 }
 .partners-item a {
   opacity: 0.2;
@@ -495,19 +516,38 @@ img {
 .partners-item a:active {
   opacity: 0.1;
 }
-.partners-item::after {
+.partners-borodinski::before {
   content: "";
   position: absolute;
   top: 0px;
-  bottom: 0px;
-  left: -50px;
+  bottom: 9px;
+  left: -47px;
   width: 2px;
   height: 52px;
   margin: auto;
   background-color: var(--basic-gray);
 }
-.partners-item:first-child::after {
-  display: none;
+.partners-pink::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 9px;
+  left: -60px;
+  width: 2px;
+  height: 52px;
+  margin: auto;
+  background-color: var(--basic-gray);
+}
+.partners-mishka::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 15px;
+  left: -65px;
+  width: 2px;
+  height: 52px;
+  margin: auto;
+  background-color: var(--basic-gray);
 }
 
 /* Buttons */
@@ -669,6 +709,8 @@ img {
 .sort-catalog-list {
   margin: 0;
   padding: 0;
+  padding-top: 2px;
+  padding-right: 9px;
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
@@ -713,7 +755,7 @@ img {
   
 }
 .switch-item:first-child .arrow-trigger { 
-  margin-right: 18px; 
+  margin-right: 19px; 
 }
 .arrow-trigger .arrow {
   fill: var(--basic-svg-gray);
@@ -846,7 +888,7 @@ img {
   display: block;
   cursor: pointer;
   user-select: none;
-  width: 100%-38px;
+  width: calc(100% - 38px);
   margin-left: 38px;
   margin-bottom: 21px;
 }
@@ -1052,6 +1094,7 @@ img {
 }
 .catalog-image {
   position: relative;
+  top: 2px;
 }
 .catalog-item:nth-child(2n-1) {
   margin-right: 40px;
@@ -1080,23 +1123,27 @@ img {
   line-height: 18px;
   color: var(--basic-black);
   margin-right: 11px;
+  width: 50px;
 }
 .pagination-item a {
   display: block;
-  padding: 16px 20px;
+  padding: 17px 20px 15px;
   color: var(--basic-black);
   background-color: var(--basic-gray);
   border-radius: 3px;
 }
 .pagination-item:last-child {
-  text-align: center;
   width: 260px;
-  height: 50px;
+}
+.pagination-item:last-child a{
+  text-align: center;
+  padding: 17px 77px 15px 78px;
   color: var(--basic-black);
   vertical-align: middle;
   text-transform: inherit;
   background-color: var(--basic-gray);
   border: none;
+  margin: 0;
 }
 .pagination-item a:hover,
 .pagination-item a:focus {
