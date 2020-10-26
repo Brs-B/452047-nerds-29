@@ -2,16 +2,31 @@
 
 @font-face {
   font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   src: local("Roboto"),
        url("../fonts/roboto.woff2") format("woff2"),
-       url("../fonts/roboto.woff") format("woff"),
-       url("../fonts/robotobold.woff2") format("woff2"),
-       url("../fonts/robotobold.woff") format("woff"),
-       url("../fonts/robotomedium.woff2") format("woff2"),
-       url("../fonts/robotomedium.woff") format("woff");
+       url("../fonts/roboto.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+        url("../fonts/robotobold.woff2") format("woff2"),
+        url("../fonts/robotobold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+      url("../fonts/robotomedium.woff2") format("woff2"),
+      url("../fonts/robotomedium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}  
 
 :root {
   --basic-black: #000000;
@@ -359,18 +374,18 @@ img {
   margin: 0;
   margin-bottom: 33px;
 }
-.about-us-text-1,
+.about-us-description,
 .about-us-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-transform: none;
 }
-.about-us-text-1 {
+.about-us-description {
   margin: 0;
   margin-bottom: 41px;
 }
-.about-us-text-2 {
+.about-us-performing {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -412,13 +427,14 @@ img {
 .percent-illustration {
   width: 360px;
   height: 208px;
-  margin-bottom: 37px;
+  margin-bottom: 30px;
 }
 .percent p {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+  margin: 0;
   margin-bottom: 30px;
 }
 .percent-list {
@@ -440,18 +456,17 @@ img {
   font-size: 45px;
   line-height: 64px;
   margin: 0;
-  margin-bottom: 10px;
-}
-.percent-item .margins11 {
   margin-bottom: 11px;
+}
+.percent-item .pi-margins {
+  margin-bottom: 12px;
 }
 .percent-item .percent-sign {
   font-weight: 700;
   font-size: 26px;
   line-height: 40px;
   position: relative;
-  top: -16px;
-  left: 2px;
+  top: -14px;
 }
 .percent-item p{
   font-weight: 400;
@@ -1090,7 +1105,7 @@ img {
 }
 .catalog-image {
   position: relative;
-  top: 2px;
+  top: 1px;
 }
 .catalog-item:nth-child(2n-1) {
   margin-right: 40px;
