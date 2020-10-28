@@ -1176,15 +1176,26 @@ img {
   background-repeat: no-repeat;
   background-position: center top;
 }
+.footer-contacts {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
   /* Address */
 
 .address {
+  display: block;
+  cursor: auto;
   width: 219px;
   height: 212px;
   padding: 49px 50px 47px;
   background-color: var(--basic-white);
-  margin-top: 54px;
-  z-index: 10;
+  position: relative;
+  z-index: 20;
 }
 .address h3 {
   margin: 0;
@@ -1212,17 +1223,21 @@ img {
   margin-bottom: 37px;
   vertical-align: baseline;
 }
-.nerds-map {
+.map-pointer {
+  width: 1440px;
+  height: 416px;
   display: block;
   cursor: pointer;
-  margin: 0;
-  padding: 0;
+  position: absolute;
+  top: 0;
+  left: -120px;
+  z-index: 1;
 }
 
 /* Socials */
 
 .footer-socials {
-  padding-top: 122px;
+  padding-top: 68px;
   padding-bottom: 68px;
   display: flex;
   flex-wrap: wrap;
@@ -1300,7 +1315,7 @@ img {
 }
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
+  animation: show 1s;
 }
 .modal-show-1 {
   display: block;
@@ -1431,21 +1446,13 @@ img {
 
 /* Animations */
 
-@keyframes bounce {
+@keyframes show {
   0% {
-    transform: translateY(-2000px);
-  }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
+    opacity: 0;
   }
 
   100% {
-    transform: translateY(0);
+    opacity: 1;
   }
 }
 

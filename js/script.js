@@ -56,7 +56,7 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-let mapLink = document.querySelector('.nerds-map');
+let mapLink = document.querySelector('.map-pointer');
 let mapPopup = document.querySelector('.modal-map');
 let mapClose = mapPopup.querySelector('.map-cross-button');
 
