@@ -55,26 +55,3 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
-
-let mapLink = document.querySelector('.map-pointer');
-let mapPopup = document.querySelector('.modal-map');
-let mapClose = mapPopup.querySelector('.map-cross-button');
-
-mapLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.add("modal-show-1");
-});
-
-mapClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.remove("modal-show-1");
-});
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (mapPopup.classList.contains("modal-show-1")) {
-      evt.preventDefault();
-      mapPopup.classList.remove("modal-show-1");
-    }
-  }
-});

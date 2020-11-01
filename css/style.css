@@ -1,32 +1,5 @@
 /* Variables */
 
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto"),
-       url("../fonts/roboto.woff2") format("woff2"),
-       url("../fonts/roboto.woff") format("woff");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto"),
-        url("../fonts/robotobold.woff2") format("woff2"),
-        url("../fonts/robotobold.woff") format("woff");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto"),
-      url("../fonts/robotomedium.woff2") format("woff2"),
-      url("../fonts/robotomedium.woff") format("woff");
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}  
 :root {
   --basic-black: #000000;
   --basic-light-black: #283136;
@@ -120,7 +93,7 @@ img {
 }
 .logo {
   width: 160px;
-  height: 65px;
+  height: 66px;
 }
 .logo-svg {
   fill: black;
@@ -229,7 +202,7 @@ img {
   text-transform: none;
   padding: 0;
   padding-bottom: 80px;
-  padding-top: 79px;
+  padding-top: 78px;
   max-width: 425px;
 }
 .middle-slider {
@@ -281,10 +254,10 @@ img {
   content: "";
   position: absolute;
   padding: 0;
-  width: 6px;
-  height: 6px;
-  left: 4px;
-  top: 4px;
+  width: 4px;
+  height: 4px;
+  left: 5px;
+  top: 5px;
   background-color: var(--basic-white);
   border: 2px solid var(--basic-control-button);
   border-radius: 50%;
@@ -296,7 +269,6 @@ img {
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
-
 }
 .main-index {
   padding-bottom: 80px;
@@ -1167,33 +1139,33 @@ img {
 
 /* Footer */
 
-.catalog-footer {
-  padding-top: 0;
-}
 .page-footer {
   background-image: url("../img/map-and-marker.jpg");
   background-repeat: no-repeat;
   background-position: center top;
 }
 .footer-contacts {
-  padding-top: 54px;
-  padding-bottom: 54px;
-  z-index: 10;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
+  height: 416px;
+  padding: 0;
 }
 
   /* Address */
 
+.footer-contacts iframe {
+  border: none;
+  width: 100%;
+}
+.footer-address {
+  position: relative;
+}
 .address {
   display: block;
-  cursor: auto;
   width: 219px;
   height: 212px;
   padding: 49px 50px 47px;
+  position: absolute;
+  top: -370px;
   background-color: var(--basic-white);
-  position: relative;
   z-index: 20;
 }
 .address h3 {
@@ -1221,16 +1193,6 @@ img {
   display: inline-block;
   margin-bottom: 37px;
   vertical-align: baseline;
-}
-.map-pointer {
-  width: 1440px;
-  height: 416px;
-  display: block;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: -120px;
-  z-index: 1;
 }
 
 /* Socials */
