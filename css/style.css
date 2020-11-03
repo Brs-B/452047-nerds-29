@@ -94,9 +94,10 @@ img {
 .logo {
   width: 160px;
   height: 66px;
+  z-index: 1;
 }
 .logo-svg {
-  fill: black;
+  fill: var(--basic-black);
 }
 .logo-svg:active {
   fill: var(--basic-svg-gray);
@@ -624,6 +625,7 @@ img {
   text-transform: uppercase;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
 }
 .text-us-button {
   padding: 17px 44px 15px;
